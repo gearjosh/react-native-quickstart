@@ -1,12 +1,15 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
+import Scroller from './Scroller';
+
 function SmallBlueBox() {
 
 
   return(
     <View style={styles.smallBlueBox}>
-      <Text style={{color: 'white'}}>I am the small one</Text>
+      <Text style={{color: 'white'}}>I am the small one. The text below scrolls horizontally:</Text>
+      <Scroller></Scroller>
     </View>
   )
 }

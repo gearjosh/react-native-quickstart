@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
   bigBlueBox: {
     flex: 3,
     padding: 5,
-    justifyContent: 'space-around',
+    justifyContent: 'space-between',
     backgroundColor: 'lightblue',
     alignSelf: 'stretch'
   }
