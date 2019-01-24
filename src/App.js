@@ -20,9 +20,9 @@ export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>I am a splash page with three blue boxes and a button. Look how pretty I am!</Text>
+        <Text>I am a splash page with three blue boxes and a button. Look how ugly I am!</Text>
         <Button style={styles.button}
-          onPress={this._onButtonPress} 
+          onPress={this._onButtonPress}
           title='I am a button you can click' />
         <View style={{flex: 1}}>
           <BigBlueBox></BigBlueBox>
@@ -37,7 +37,7 @@ export default class App extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    marginTop: 25,
+    marginTop: 24,
     backgroundColor: '#fafafa',
     alignItems: 'stretch',
     justifyContent: 'center',

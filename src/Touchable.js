@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, TouchableNativeFeedback, Alert, View, Text } from 'react-native';
 
-function BigBlueBox() {
+function Touchable() {
 
 
   return(
@@ -23,4 +23,4 @@ const styles = StyleSheet.create({
 });
 
 
-export default BigBlueBox;
+export default Touchable;
