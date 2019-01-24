@@ -5,18 +5,30 @@ import React, { Component } from 'react';
 // import { bindActionCreators } from 'redux';
 // import PropTypes from 'prop-types';
 
-import { StyleSheet, Text, View, Button, Image } from 'react-native';
+import { StyleSheet, Text, View, Button, Image, Alert } from 'react-native';
 import Monster from './Monster';
+import BigBlueBox from './BigBlueBox';
+import MediumBlueBox from './MediumBlueBox';
+import SmallBlueBox from './SmallBlueBox';
 
-export default class App extends React.Component {
+export default class App extends Component {
+
+  _onButtonPress() {
+    Alert.alert('This button does something, see?')
+  }
+
   render() {
-
-
     return (
       <View style={styles.container}>
-        <Text>I am a splash page with a monster.</Text>
-        <Button title='I am a button you cannot click' />
-        <Monster name='Doug'/>
+        <Text>I am a splash page with three blue boxes and a button. Look how pretty I am!</Text>
+        <Button style={styles.button}
+          onPress={this._onButtonPress} 
+          title='I am a button you can click' />
+        <View style={{flex: 1}}>
+          <BigBlueBox></BigBlueBox>
+          <MediumBlueBox></MediumBlueBox>
+          <SmallBlueBox></SmallBlueBox>
+        </View>
       </View>
     );
   }
@@ -25,8 +37,15 @@ export default class App extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
+    marginTop: 25,
+    backgroundColor: '#fafafa',
+    alignItems: 'stretch',
     justifyContent: 'center',
+    height: '100%',
+    backgroundColor: 'steelblue'
   },
+  button: {
+    width: '80%',
+    color: 'red',
+  }
 });

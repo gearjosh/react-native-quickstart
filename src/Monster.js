@@ -10,7 +10,7 @@ function Monster(props) {
     <View style={styles.monsterContainer}>
     <Text>Monster: {props.name}</Text>
     <View >
-      <Image source={picture} style={styles.monster} resizeMode='contain'></Image>
+      <Image source={picture} style={styles.monster} ></Image>
     </View>
     </View>
   )
@@ -24,10 +24,9 @@ const styles = StyleSheet.create({
     justifyContent: 'flex-start',
   },
   monster:  {
-    flex: 2,
-    backgroundColor: 'lime',
-    width: 320,
-    height: 400
+    backgroundColor: 'lightblue',
+    width: '100%',
+    aspectRatio: 1/0.94
   }
 });
 
